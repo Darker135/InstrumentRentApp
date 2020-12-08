@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\InstrumentRentApp\bin\Debug\InstrumentRentApp.exe.config
+C:\Users\Admin\source\repos\InstrumentRentApp\bin\Debug\InstrumentRentApp.exe
+C:\Users\Admin\source\repos\InstrumentRentApp\bin\Debug\InstrumentRentApp.pdb
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.Properties.Resources.resources
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.exe
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.pdb
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.Forms.AddOrderForm.resources
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.MainScreenForm.resources
+C:\Users\Admin\source\repos\InstrumentRentApp\obj\Debug\InstrumentRentApp.Forms.ChangeOrderForm.resources
