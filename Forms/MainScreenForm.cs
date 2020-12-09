@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InstrumentRentApp.Forms;
@@ -19,7 +20,7 @@ namespace InstrumentRentApp
         static readonly ChangeOrderForm changeForm = new ChangeOrderForm();
         static DataTable table = new DataTable();
         static readonly string dataFileName = @"OrderInfo.txt";
-        static readonly string pathToDataFile = Path.Combine(Environment.CurrentDirectory, @"Data\");
+        static readonly string pathToDataFile = Path.Combine(Environment.CurrentDirectory);
         public static readonly string fullPathToDataFile = Path.Combine(pathToDataFile, dataFileName);
 
         public MainScreenForm()
@@ -31,15 +32,23 @@ namespace InstrumentRentApp
 
         private void MainScreenForm_Load(object sender, EventArgs e)
         {
-            if(!File.Exists(fullPathToDataFile))
-                File.Create(fullPathToDataFile);
             ManageDgv();
-            TxtToDgv();            
+            CheckFileExistance();
+            TxtToDgv();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
             orderForm.ShowDialog();
+        }
+
+        private void CheckFileExistance()
+        {
+            if (!File.Exists(fullPathToDataFile))
+                using (var stream = File.Create(fullPathToDataFile))
+                {
+                    stream.Dispose();
+                }
         }
 
         private void ManageDgv()
